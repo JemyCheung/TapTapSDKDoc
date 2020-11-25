@@ -5,6 +5,8 @@
 2. 全部选择，点击import   
 3. 导入后，将 Plugins/script 下面的 XDSDKListener.cs 脚本文件拖动到长生命周期的对象中进行脚本挂接  
 
+**您可以参考[快速开始demo]()**
+
 ![unitypackage import](http://qnblog.ijemy.com/WX20201125-093759.png)  
 **至此，已经将XDSDk导入自己的工程**   
 ![import down](http://qnblog.ijemy.com/xd_importdown.png)   

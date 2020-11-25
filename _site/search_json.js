@@ -14,7 +14,7 @@ window.ydoc_plugin_search_json = {
         {
           "title": "导包",
           "url": "/tdsdk/xdquickstart.html#导包",
-          "content": "导包打开/xd-sdk-4/sdk/unity/vx.x.x，拖拽unitypackage到Plugins目录\n全部选择，点击import\n导入后，将 Plugins/script 下面的 XDSDKListener.cs 脚本文件拖动到长生命周期的对象中进行脚本挂接\n至此，已经将XDSDk导入自己的工程\n"
+          "content": "导包打开/xd-sdk-4/sdk/unity/vx.x.x，拖拽unitypackage到Plugins目录\n全部选择，点击import\n导入后，将 Plugins/script 下面的 XDSDKListener.cs 脚本文件拖动到长生命周期的对象中进行脚本挂接\n您可以参考快速开始demo至此，已经将XDSDk导入自己的工程\n"
         },
         {
           "title": "登陆",
