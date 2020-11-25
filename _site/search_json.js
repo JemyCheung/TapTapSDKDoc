@@ -1,7 +1,7 @@
 window.ydoc_plugin_search_json = {
   "XDSDK": [
     {
-      "title": "ydoc",
+      "title": "TapTap SDK documents",
       "content": "快速开始\n初始化\n登录\n\n微信登录\nTapTap登陆\nQQ登录\n心动登录\n苹果登录\n登录状态\n退出登录\n\n\n角色\n用户中心\n支付\n游客升级\n退出\n微信分享\n实名认证\n游客绑定\n客服\nTapDB\nTapTap论坛\nXDLive直播\n防沉迷\n协议页面\n",
       "url": "/tdsdk/index.html",
       "children": []
@@ -48,29 +48,24 @@ window.ydoc_plugin_search_json = {
     {
       "title": "",
       "content": "",
+      "url": "/tdsdk/SetCallback.html",
+      "children": [
+        {
+          "title": "SetCallback XDCallback",
+          "url": "/tdsdk/SetCallback.html#setcallback-xdcallback",
+          "content": "SetCallback XDCallback实现并设置回调方法脚本需要实现的回调请参考以下代码    XDSDK.SetCallback (new XDSDKHandler ());    public class XDSDKHandler : XDCallback {\n        //初始化成功回调\n        public override void OnInitSucceed (){\n\n        }\n\n        //初始化失败回调\n        public override void OnInitFailed (string msg){\n\n        }\n\n        //登录成功回调\n        public override void OnLoginSucceed (string token){\n\n        }\n\n        //登录失败回调\n        public override void OnLoginFailed (string msg){\n\n        }\n\n        //登录取消回调\n        public override void OnLoginCanceled (){\n\n        }\n\n        //游客绑定成功回调\n        public override void OnGuestBindSucceed (string token){\n\n        }\n\n        //游客绑定失败回调（可选）\n        public override void OnGuestBindFailed(string msg){\n\n        }\n\n        //登出回调\n        public override void OnLogoutSucceed (){\n\n        }\n\n        //支付完成回调\n        public override void OnPayCompleted (){\n\n        }\n\n        //支付失败回调\n        public override void OnPayFailed (string msg){\n\n        }\n\n        //支付取消回调\n        public override void OnPayCanceled (){  \n\n        }\n\n        //Android 退出回调\n        public override void OnExitConfirm (){\n\n        }\n\n        //Android 取消退出回调\n        public override void OnExitCancel (){\n\n        }\n\n        //微信分享成功回调（可选）\n        public override void OnWXShareSucceed (){\n\n        }\n\n        //微信分享失败回调（可选）\n        public override void OnWXShareFailed (){\n\n        }\n\n        //实名认证成功\n        public override void OnRealNameSucceed (){\n\n        }\n\n        //实名认证失败\n        public override void OnRealNameFailed (string error_msg){\n\n        }\n\n    /// 有未完成的订单回调，比如：礼包码.注意：多个未完成订单会在一个数组中一起回调。（只会在登录状态下回调）\n    /// @param resultList 订单信息List。\n    /// 单个未完成订单信息包含：     TransactionIdentifier ：订单标识 ，恢复购买时需要回传\n    ///                             \t\t Product_Id ：商品ID，\n    ///                                        Quantity：商品数量\n    public override void RestoredPayment(List> resultList){\n        }\n\n        //用户同意所有协议\n        public override void OnProtocolAgreed() {}\n\n    \t//打开协议成功\n        public override void OnProtocolOpenSucceed() {}\n\n    \t//打开协议失败\n        public override void OnProtocolOpenFailed(string msg) {}\n\n    }\n"
+        }
+      ]
+    },
+    {
+      "title": "",
+      "content": "",
       "url": "/tdsdk/Login.html",
       "children": [
         {
           "title": "Login",
           "url": "/tdsdk/Login.html#login",
           "content": "Login调用该接口进行登录。public static void Login()示例代码XDSDK.Login();调用该接口会触发下列回调。获取、查看用户信息以及支付接口请在获取到登录成功回调之后调用。\n\n类别\n回调方法\n\n\n\n\n登录成功\nvoid OnLoginSucceed(string token)\n\n\n登录失败\nvoid OnLoginFailed(string msg)\n\n\n登录取消\nvoid OnLoginCanceled()\n\n\n"
-        }
-      ]
-    },
-    {
-      "title": "env",
-      "content": "env",
-      "url": "/tdsdk/env.html",
-      "children": [
-        {
-          "title": "title",
-          "url": "/tdsdk/env.html#title",
-          "content": "titlecontent"
-        },
-        {
-          "title": "sub-title",
-          "url": "/tdsdk/env.html#title-sub-title",
-          "content": "sub-titlecontent"
         }
       ]
     }
