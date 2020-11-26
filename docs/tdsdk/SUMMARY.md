@@ -2,6 +2,8 @@
 
 # 导航栏
 * [快速开始](xdquickstart.md)
+  * [Android](./android.md)
+  * [iOS](./ios.md)
 * [初始化](InitSDK.md)
 * [设置监听](SetCallback.md)
 * [登录](./Login.md)

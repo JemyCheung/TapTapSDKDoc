@@ -2,6 +2,8 @@
 
 
 * [快速开始](./xdquickstart.md)
+  * [Android](./android.md)
+  * [iOS](./ios.md)
 * [初始化](./InitSDK.md)
 * [登录](./Login.md)
   * [微信登录](./Login.md)  

@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="UTF-8"/><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><link rel="apple-touch-icon" sizes="180x180" href="../ydoc/images/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="../ydoc/images/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="../ydoc/images/favicon-16x16.png"/><link rel="manifest" href="../ydoc/images/manifest.json"/><link rel="mask-icon" href="../ydoc/images/safari-pinned-tab.svg" color="#5bbad5"/><meta name="theme-color" content="#ffffff"/><meta http-equiv="Cache-Control" content="no-transform"/><meta http-equiv="Cache-Control" content="no-siteapp"/><title>Android配置快速开始-XDSDK</title><link rel="stylesheet" href="../ydoc/styles/style.css"/><meta name="author" content="jemy"/><meta name="keywords"/><meta name="description" content="Introduce how to use taptap p SDK"/><meta id="releativePath" content=".."/><link rel="stylesheet" href="../ydoc/ydoc-plugin-search/search.css"/></head><body><div class="g-doc"><div class="m-aside"><div class="m-summary" id="js-menu"><div class="m-summary-content" id="js-menu-content"><div class="m-summary-block"><ul class="m-summary-list"><li class="item"><div class="m-summary-block"><a href="xdquickstart.html" class="href">快速开始</a><ul class="m-summary-list indent"><li class="item"><a href="" class="href">Android</a></li><li class="item"><a href="ios.html" class="href">iOS</a></li></ul></div></li><li class="item"><a href="InitSDK.html" class="href">初始化</a></li><li class="item"><a href="SetCallback.html" class="href">设置监听</a></li><li class="item"><div class="m-summary-block"><a href="Login.html" class="href">登录</a><ul class="m-summary-list indent"><li class="item"><a href="Login.html" class="href">微信登录</a></li><li class="item"><a href="Login.html" class="href">TapTap登陆</a></li><li class="item"><a href="Login.html" class="href">QQ登录</a></li><li class="item"><a href="Login.html" class="href">心动登录</a></li><li class="item"><a href="Login.html" class="href">苹果登录</a></li><li class="item"><a href="Login.html" class="href">登录状态</a></li><li class="item"><a href="Login.html" class="href">退出登录</a></li></ul></div></li><li class="item"><a href="Login.html" class="href">角色</a></li><li class="item"><a href="Login.html" class="href">用户中心</a></li><li class="item"><a href="Login.html" class="href">支付</a></li><li class="item"><a href="Login.html" class="href">游客升级</a></li></ul></div></div></div><div class="m-summary-switch" id="js-summary-switch"><svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15" class="bottom"><g transform="translate(904.92214,-879.1482)"><path d="m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,-55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,-174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,-174.68583 0.6895,0 26.281,25.03215 56.8701,55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864-231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,-104.0616 -231.873,-231.248 z" fill="#fff"></path></g></svg><svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15" class="top"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="aaa" fill="#fff" fill-rule="nonzero"><path d="M231.2455,342.502 L0,111.25397 L55.6165,55.62697 C86.2056,25.03212 111.7971,-2.99999998e-05 112.4866,-2.99999998e-05 C113.176,-2.99999998e-05 192.3503,78.60859 288.4293,174.6858 L463.1185,349.3716 L637.8077,174.6858 C733.8867,78.60859 813.060896,-2.99999997e-05 813.750396,-2.99999997e-05 C814.439896,-2.99999997e-05 840.031396,25.03212 870.620496,55.62697 L926.236996,111.25397 L694.9915,342.502 C567.8065,469.6884 463.4636,573.75 463.1185,573.75 C462.7734,573.75 358.4305,469.6884 231.2455,342.502 Z" id="Shape" transform="translate(463.118498, 286.874985) scale(1, -1) translate(-463.118498, -286.874985) "></path></g></g></svg></div></div><div class="m-main" id="js-panel"><header class="m-header" id="js-header"><div class="m-header-title js-logo"><a href="../index.html" target="_self"><img class="logo" width="36" src="../ydoc/images/dog@1x.png"/><h6 class="name">YDoc</h6></a></div><div><div class="m-search">
+      <div class="icon">&#xf0fd;</div>
+      <input type="text" class="input js-input" placeholder="搜索" />
+      <div class="m-search-result js-search-result"></div>
+    </div></div><nav class="m-header-nav js-nav"><ul class="m-header-items"><li class="item active"><a class="href" href="index.html">XDSDK</a></li><li class="item "><a class="href" href="../documents/index.md">Friend</a></li><li class="item "><a class="href" href="../documents/index.md">Achievement</a></li><li class="item "><a class="href" href="../about/index.html">about</a></li></ul></nav><div id="js-nav-btn" class="m-header-btn ui-font-ydoc"></div></header><div class="m-content" id="js-content"><div id="markdown-body" class="m-content-container markdown-body"><h1>Android配置快速开始</h1>
+<h2 id="1.-按需要修改androidmanifest">1. 按需要修改AndroidManifest</h2>
+<p>可以根据需要,参照如下示例修改Plugins/Android/AndroidManifest.xml。</p>
+<pre><code>&#x3C;?xml version=&#x22;1.0&#x22; encoding=&#x22;utf-8&#x22;?&#x3E;
+&#x3C;manifest
+    xmlns:android=&#x22;http://schemas.android.com/apk/res/android&#x22;
+    package=&#x22;com.xd.sdkdemo&#x22;
+    xmlns:tools=&#x22;http://schemas.android.com/tools&#x22;
+    android:installLocation=&#x22;preferExternal&#x22;
+    android:versionCode=&#x22;1&#x22;
+    android:versionName=&#x22;1.0&#x22;&#x3E;
+    &#x3C;supports-screens
+        android:smallScreens=&#x22;true&#x22;
+        android:normalScreens=&#x22;true&#x22;
+        android:largeScreens=&#x22;true&#x22;
+        android:xlargeScreens=&#x22;true&#x22;
+        android:anyDensity=&#x22;true&#x22;/&#x3E;
+
+ &#x9;&#x3C;uses-sdk tools:overrideLibrary=&#x22;com.bun.miitmdid&#x22;/&#x3E;
+
+    &#x3C;uses-permission android:name=&#x22;android.permission.INTERNET&#x22; /&#x3E;
+    &#x3C;uses-permission android:name=&#x22;android.permission.ACCESS_NETWORK_STATE&#x22; /&#x3E;
+    &#x3C;uses-permission android:name=&#x22;android.permission.ACCESS_WIFI_STATE&#x22; /&#x3E;
+    &#x3C;uses-permission android:name=&#x22;android.permission.WRITE_EXTERNAL_STORAGE&#x22; /&#x3E;
+
+    &#x3C;application
+        android:theme=&#x22;@style/UnityThemeSelector&#x22;
+        android:icon=&#x22;@drawable/app_icon&#x22;
+        android:label=&#x22;@string/app_name&#x22;
+        android:debuggable=&#x22;true&#x22;&#x3E;
+
+        &#x3C;activity
+        android:name=&#x22;com.xd.sdklib.helper.XDStartView&#x22;
+        android:theme=&#x22;@android:style/Theme.Translucent.NoTitleBar.Fullscreen&#x22;
+        android:configChanges=&#x22;orientation|keyboardHidden|screenSize&#x22; /&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.xd.sdklib.helper.XDPayActivity&#x22;
+        android:theme=&#x22;@android:style/Theme.Translucent.NoTitleBar.Fullscreen&#x22;
+        android:configChanges=&#x22;orientation|keyboardHidden|screenSize&#x22;  /&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.xd.sdklib.helper.XDViewActivity&#x22;
+        android:theme=&#x22;@android:style/Theme.Translucent.NoTitleBar.Fullscreen&#x22;
+        android:configChanges=&#x22;orientation|keyboardHidden|screenSize&#x22; /&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.xd.sdklib.helper.XDWebView&#x22;
+        android:theme=&#x22;@android:style/Theme.Translucent.NoTitleBar.Fullscreen&#x22; /&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.xd.sdklib.helper.WXEntryActivity&#x22;
+        android:theme=&#x22;@android:style/Theme.Translucent.NoTitleBar.Fullscreen&#x22; /&#x3E;
+
+    &#x3C;activity-alias
+        android:name=&#x22;&#x9879;&#x76EE;&#x5305;&#x540D;.wxapi.WXEntryActivity&#x22;
+        android:exported=&#x22;true&#x22;
+        android:targetActivity=&#x22;com.xd.sdklib.helper.WXEntryActivity&#x22;/&#x3E;
+
+    &#x3C;!-- Ping++ SDK --&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.pingplusplus.android.PaymentActivity&#x22;
+        android:configChanges=&#x22;orientation|screenSize&#x22;
+        android:launchMode=&#x22;singleTop&#x22;
+        android:theme=&#x22;@android:style/Theme.Translucent.NoTitleBar.Fullscreen&#x22; /&#x3E;
+
+     &#x3C;!-- TapTap&#x767B;&#x5F55; --&#x3E;
+    &#x3C;activity
+            android:name=&#x22;com.taptap.sdk.TapTapActivity&#x22;
+            android:exported=&#x22;false&#x22;
+            android:configChanges=&#x22;keyboard|keyboardHidden|screenLayout|screenSize|orientation&#x22;
+            android:theme=&#x22;@android:style/Theme.Translucent.NoTitleBar.Fullscreen&#x22; /&#x3E;
+
+    &#x3C;activity
+            android:name=&#x22;com.taptap.forum.TapTapActivity&#x22;
+            android:configChanges=&#x22;keyboard|keyboardHidden|screenLayout|screenSize|orientation&#x22;
+            android:exported=&#x22;false&#x22;
+            android:theme=&#x22;@android:style/Theme.NoTitleBar.Fullscreen&#x22; /&#x3E;
+
+    &#x3C;!-- &#x652F;&#x4ED8;&#x5B9D; --&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.alipay.sdk.app.H5PayActivity&#x22;
+        android:configChanges=&#x22;orientation|keyboardHidden|navigation&#x22;
+        android:exported=&#x22;false&#x22;
+        android:screenOrientation=&#x22;portrait&#x22; /&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.alipay.sdk.auth.AuthActivity&#x22;
+        android:configChanges=&#x22;orientation|keyboardHidden|navigation&#x22;
+        android:exported=&#x22;false&#x22;
+        android:screenOrientation=&#x22;portrait&#x22; /&#x3E;
+
+    &#x3C;!-- &#x5FAE;&#x4FE1;&#x652F;&#x4ED8; --&#x3E;
+    &#x3C;activity-alias
+        android:name=&#x22;&#x9879;&#x76EE;&#x5305;&#x540D;.wxapi.WXPayEntryActivity&#x22;
+        android:exported=&#x22;true&#x22;
+        android:targetActivity=&#x22;com.pingplusplus.android.PaymentActivity&#x22; /&#x3E;
+
+    &#x3C;!-- QQ&#x767B;&#x5F55; --&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.tencent.tauth.AuthActivity&#x22;
+        android:noHistory=&#x22;true&#x22;
+        android:launchMode=&#x22;singleTask&#x22; /&#x3E;
+    &#x3C;activity
+        android:name=&#x22;com.tencent.connect.common.AssistActivity&#x22;
+        android:theme=&#x22;@android:style/Theme.Translucent.NoTitleBar&#x22;
+        android:configChanges=&#x22;orientation|keyboardHidden|screenSize&#x22; /&#x3E;
+
+    &#x3C;!-- &#x6587;&#x4EF6;&#x914D;&#x7F6E; --&#x3E;    
+    &#x3C;provider
+&#x9;&#x9;android:authorities=&#x22;&#x9879;&#x76EE;&#x5305;&#x540D;.com.squareup.picasso&#x22;
+&#x9;&#x9;android:exported=&#x22;false&#x22;
+&#x9;&#x9;android:name=&#x22;com.squareup.picasso.PicassoProvider&#x22;/&#x3E;
+    &#x3C;/application&#x3E;
+&#x3C;/manifest&#x3E;
+</code></pre>
+<h2 id="2.-防沉迷设置">2. 防沉迷设置</h2>
+<p>Android 防沉迷依赖于 XDSDK.OnResume 和 XDSDK.OnStop 接口，所以游戏应确保这两个接口接入正常，在 unity 中接入示例：</p>
+<pre><code>void OnApplicationPause(bool pauseStatus)
+    {
+        if (pauseStatus)
+        {
+&#x9;&#x9;&#x9;xdsdk.XDSDK.OnStop();
+        }
+        else
+        {
+&#x9;&#x9;&#x9;xdsdk.XDSDK.OnResume();
+        }
+    }
+</code></pre>
+<p>如果游戏将项目导出为 Android 原生工程，也可以在主 Activity 中的<code>onResume</code>和<code>onStop</code>中调用原生对应接口 <code>XDSDK.onResume</code>和<code>XDSDK.onStop</code>。两种接入方式选择一个即可。</p>
+<h2 id="3.-生成apk">3. 生成APK</h2>
+<p>在Unity中生成APK，或将工程导出至Android Studio进行打包。</p>
+<p style="color:red">当前版本QQ SDK （open_sdk_r6008_lite.jar）包含assets，当构建工具设置成internal时，这些文件不会被打包进apk中，会导致未安装QQ时不能扫码登录。为避免此类问题，建议将构建构建工具换成gradle或提取jar包含的assets文件，放置于android/assets</p>  
+<p><img src="http://qnblog.ijemy.com/xd_android_releaseapk.png" alt></p>
+<h2 id="faq">FAQ</h2>
+<ul>
+<li>游戏打包后无法在AndroidP的机型上使用</li>
+</ul>
+<ol>
+<li>将<a href="../org.apache.http.legacy.jar">org.apache.http.legacy.jar</a>打包到游戏内</li>
+<li>AndroidManifest的Application标签下添加如下内容</li>
+</ol>
+<pre><code>&#x3C;uses-library android:name=&#x22;org.apache.http.legacy&#x22; android:required=&#x22;false&#x22;/&#x3E;
+</code></pre>
+<p>另外需要在 AndroidManifest.xml中 application 标签内添加: android:usesCleartextTraffic=&quot;true&quot; ，例如：</p>
+<pre><code>    &#x3C;application
+     &#x2026;
+      android:usesCleartextTraffic=&#x22;true&#x22;
+     &#x2026;
+    &#x3E;
+
+</code></pre>
+</div><div class="m-content-container m-paging"><div class="m-paging-prev m-paging-item"><a href="xdquickstart.html" class="href"><span class="ui-font-ydoc"></span>快速开始</a></div><div class="m-paging-next m-paging-item"><a href="ios.html" class="href">iOS<span class="ui-font-ydoc"></span></a></div></div></div></div></div><div></div><script>
+    var $content = document.getElementById('js-content');
+    var $summaryItems = Array.prototype.slice.call(document.querySelectorAll('#js-menu .href'));
+    var $menu = document.getElementById('js-menu');
+    if (sessionStorage.prevPathname) {
+      sessionStorage.setItem('prevPrevPathname', sessionStorage.prevPathname);
+      sessionStorage.setItem('prevPrevMenuScrollTop', sessionStorage.prevMenuScrollTop);
+      sessionStorage.setItem('prevPrevContentScrollTop', sessionStorage.prevContentScrollTop);
+    }
+    if (sessionStorage.locationPathname) {
+      sessionStorage.setItem('prevPathname', sessionStorage.locationPathname);
+      sessionStorage.setItem('prevMenuScrollTop', sessionStorage.menuScrollTop);
+      sessionStorage.setItem('prevContentScrollTop', sessionStorage.contentScrollTop);
+    }
+    if ($menu && sessionStorage.menuScrollTop) {
+		  $menu.scrollTop = sessionStorage.menuScrollTop;
+    }
+    // 刷新页面但不切换 pathname 的时候，内容区恢复到记忆的高度
+    if ($content && sessionStorage.contentScrollTop && window.location.pathname == sessionStorage.locationPathname) {
+      $content.scrollTop = sessionStorage.contentScrollTop;
+    } else if (sessionStorage.prevPrevPathname && sessionStorage.prevPrevPathname === window.location.pathname) {
+      if ($menu && sessionStorage.prevPrevMenuScrollTop) {
+        $menu.scrollTop = sessionStorage.prevPrevMenuScrollTop;
+      }
+      if ($content && sessionStorage.prevPrevContentScrollTop) {
+        $content.scrollTop = sessionStorage.prevPrevContentScrollTop;
+      }
+    }
+    sessionStorage.setItem('locationPathname', window.location.pathname);
+    </script><script src="../ydoc/scripts/plugins/dollar.min.js"></script><script src="../ydoc/scripts/plugins/responsive-nav.min.js"></script><script src="../ydoc/scripts/plugins/slideout.min.js"></script><script src="../ydoc/scripts/app.js"></script><script src="../ydoc/ydoc-plugin-search/core.js"></script><script src="../ydoc/ydoc-plugin-search/search.js"></script><script src="../search_json.js"></script></body></html>

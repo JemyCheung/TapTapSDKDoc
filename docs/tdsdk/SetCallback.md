@@ -1,11 +1,12 @@
 ## SetCallback XDCallback
+设置XDSDK的所有回调监听  
 
-实现并设置回调方法
-
-脚本需要实现的回调请参考以下代码
+### 示例代码  
 ```
     XDSDK.SetCallback (new XDSDKHandler ());
 ```
+
+### API接口  
 ```
     public class XDSDKHandler : XDCallback {
 
@@ -94,13 +95,12 @@
 
         }
 
-    /// 有未完成的订单回调，比如：礼包码.注意：多个未完成订单会在一个数组中一起回调。（只会在登录状态下回调）
-    /// @param resultList 订单信息List。
-    /// 单个未完成订单信息包含：     TransactionIdentifier ：订单标识 ，恢复购买时需要回传
-    ///                             		 Product_Id ：商品ID，
-    ///                                        Quantity：商品数量
-    public override void RestoredPayment(List<Dictionary<string,string>> resultList){
-        }
+        /// 有未完成的订单回调，比如：礼包码.注意：多个未完成订单会在一个数组中一起回调。（只会在登录状态下回调）
+        /// @param resultList 订单信息List。
+        /// 单个未完成订单信息包含：     TransactionIdentifier ：订单标识 ，恢复购买时需要回传
+        ///                             		 Product_Id ：商品ID，
+        ///                                        Quantity：商品数量
+        public override void RestoredPayment(List<Dictionary<string,string>> resultList){}
 
         //用户同意所有协议
         public override void OnProtocolAgreed() {}

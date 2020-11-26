@@ -11,7 +11,7 @@
 **至此，已经将XDSDk导入自己的工程**   
 ![import down](http://qnblog.ijemy.com/xd_importdown.png)   
 
-## 登陆  
+## 简单实现TapTap登陆功能  
 ### 步骤  
 实现登录脚本  
 - 平台判断  
